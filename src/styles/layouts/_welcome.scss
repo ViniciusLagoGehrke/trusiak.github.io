@@ -1,0 +1,71 @@
+.welcome {
+    @include flex(sb, c, row);
+
+    position: relative;
+    margin-bottom: 220px;
+    padding-top: 25px;
+
+    @include breakpoint-down(small) {
+        @include flex(c, c, column-reverse);
+        margin-bottom: 170px;
+        padding-top: 0px;
+    }
+
+    .wrapper {
+        padding: 0 20px;
+
+        @include breakpoint-down(small) {
+            padding: 0 30px;
+        }
+    }
+
+    &__svg {
+        @include flex(c, c, row);
+
+        position: relative;
+        width: 733px;
+        height: 482px;
+
+        @include breakpoint-down(small) {
+            width: 100%;
+            height: auto;
+            min-width: 450px;
+            max-width: 600px;
+        }
+    }
+
+    &__article {
+        max-width: 565px;
+
+        @include breakpoint-down(small) {
+            text-align: center;
+        }
+    }
+
+    &__name {
+        color: var(--color-very-darkBlue);
+    }
+
+    &__text {
+        color: var(--color-grayishViolet);
+        margin-top: 10px;
+    }
+}
+
+.svg{
+    position: absolute;
+    width: 733px;
+    height: 482px; 
+    left: 7vw;
+
+    @include breakpoint-down(medium) {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+    @include breakpoint-down(small) {
+        left: 55px;
+        padding-bottom: 50px;
+    }
+}

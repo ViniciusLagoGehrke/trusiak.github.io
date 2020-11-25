@@ -1,0 +1,73 @@
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'components/button';
+@import 'components/hamburger';
+@import 'base/normalize';
+@import 'base/main';
+@import 'base/typography';
+
+
+@import 'layouts/header';
+@import 'layouts/welcome';
+@import 'layouts/form';
+@import 'layouts/response';
+@import 'layouts/feature';
+@import 'layouts/footer';
+@import 'layouts/wrapper';
+@import 'layouts/about';
+@import 'layouts/boost';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+@media only screen and (max-width: 1130px){
+
+
+
+    .footer .wrapper{
+            padding: 0 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 875px){
+
+
+
+    .button--response{
+        width: 100%;
+    }
+
+    
+}
+//https://shrtco.de/4zLX7f
+@media only screen and (min-width: 1440px){
+
+    
+}

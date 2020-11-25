@@ -1,0 +1,140 @@
+.button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+
+
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+  }
+  
+  @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+  
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+      & {
+        font-size: $min-font-size;
+        @media screen and (min-width: $min-vw) {
+          font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        }
+        @media screen and (min-width: $max-vw) {
+          font-size: $max-font-size;
+        }
+      }
+    }
+  }
+
+  h1{
+    // Min-viewport-width, Max-vieport-width, min-font-size, max-font-size
+    @include fluid-type(375px, 1440px, 44px, 80px);
+
+    letter-spacing: -2px;
+    line-height: 1.12;
+}
+
+h2{
+    @include fluid-type(375px, 1440px, 27px, 35px);
+
+    font-size: var(--fs-h2-max);
+}
+
+h3{
+   @include fluid-type(375px, 1440px, 15px, 21px);
+   
+
+   @include breakpoint-down(small) {
+        font-size: 21px;
+    }
+}
+
+h4{
+    font-size: var(--fs-h4-max);
+}
+
+.menu{
+    &__link{
+        font-size: 16px;
+        font-weight: 700;
+
+        @include breakpoint-down(small) {
+            font-size: 18px;
+        }
+    }
+}
+
+.button{
+    &--login{
+        font-size: 16px;
+
+        @include breakpoint-down(small) {
+            font-size: 18px;
+            color: var(--color-white);
+        }
+    }
+
+    &--response{
+        font-size: 15px;
+    }
+}
+
+.welcome{
+    &__text{
+        @include fluid-type(375px, 1440px, 18px, 22px);
+        line-height: 1.6;
+    }
+}
+.response{
+    &__input-link{
+        @include fluid-type(375px, 1440px, 16px, 20px);
+    }
+    &__output-link{
+        @include fluid-type(375px, 1440px, 16px, 20px);
+    }
+    &__error{
+        @include fluid-type(375px, 1440px, 16px, 20px);
+    }
+}
+
+.form{
+    &__error{
+        font-size: 15px;
+    }
+}
+
+.about{
+    &__text{
+        @include fluid-type(375px, 1440px, 16px, 18px);
+        line-height: 1.55;
+
+    
+        
+    }
+}
+
+.feature{
+    &__text{
+        @include fluid-type(375px, 1440px, 10px, 16px);
+        line-height: 1.55;
+
+        @include breakpoint-down(small) {
+            font-size: 16px;
+        }
+    }
+}
+
+.footer{
+    &__link{
+        font-size: 14px;
+
+        @include breakpoint-down(small) {
+            font-size: 16px;
+        }
+    }
+}

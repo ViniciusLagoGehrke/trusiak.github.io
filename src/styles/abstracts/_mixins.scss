@@ -1,0 +1,39 @@
+
+$breakpoints: (
+    "small": "875px",
+    "medium": "1130px",
+    //"xlarge": "1400px"
+);
+
+$justify-content: (
+    "fs": flex-start,
+    "fe": flex-end,
+    "c": center,
+    "sb": space-between,
+    "sa": space-around,
+    "se": space-evenly,
+    "ih": inherit
+);
+
+$align-items: (
+    "b": baseline,
+    "st": stretch,
+    "fs": flex-start,
+    "fe": flex-end,
+    "c": center,
+    "ih": inherit
+);
+
+// Flexbox Mixins
+@mixin breakpoint-down($size) {
+    @media screen and (max-width: map-get($map: $breakpoints, $key: $size)){
+        @content;
+    }
+}
+
+@mixin flex($jc, $ai, $direction) {
+    display: flex;
+    justify-content: map-get($map: $justify-content, $key: $jc);
+    align-items: map-get($map: $align-items, $key: $ai);
+    flex-direction: $direction;
+}
