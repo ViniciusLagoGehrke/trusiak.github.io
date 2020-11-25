@@ -20,7 +20,19 @@
         margin-top: 36px;
         border-radius: 50px;
     }
-    
+
+    &--form {
+        margin-left: 23px;
+        height: 64px;
+        width: 190px;
+        border-radius: 10px;
+
+        @include breakpoint-down(small) {
+            width: 100%;
+            margin: 13px 0 0 0;
+            height: 48px;
+        }
+    }
     &--full{
         background-color: var(--color-cyan);
         color: white;
