@@ -2,7 +2,7 @@
     @include flex(sb, c, row);
 
     position: relative;
-    margin-bottom: 220px;
+    margin-bottom: 150px;
     padding-top: 25px;
 
     @include breakpoint-down(small) {
