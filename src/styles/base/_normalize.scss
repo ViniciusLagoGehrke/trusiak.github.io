@@ -1,6 +1,6 @@
 html {
-    line-height: 1.25; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+    line-height: 1.25;
+    -webkit-text-size-adjust: 100%; 
     font-size: 18px;
   }
 
@@ -19,7 +19,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: .5s;
+    //transition: .5s;
 }
   /**
    * Render the `main` element consistently in IE.

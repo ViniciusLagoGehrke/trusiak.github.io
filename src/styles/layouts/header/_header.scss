@@ -33,6 +33,7 @@
         &__wrapper {
             @include flex(i, i, row);
             width: 100%;
+            transition: .5s;
 
             @include breakpoint-down(small) {
                 @include flex(i, i, column);

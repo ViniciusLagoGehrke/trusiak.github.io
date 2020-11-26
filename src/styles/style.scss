@@ -1,22 +1,32 @@
 
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
+
 @import 'components/button';
 @import 'components/hamburger';
+
 @import 'base/normalize';
 @import 'base/main';
 @import 'base/typography';
 
-
-@import 'layouts/header';
-@import 'layouts/welcome';
-@import 'layouts/form';
-@import 'layouts/response';
-@import 'layouts/feature';
-@import 'layouts/footer';
+//Wrapper
 @import 'layouts/wrapper';
-@import 'layouts/about';
-@import 'layouts/boost';
+
+//Header
+@import 'layouts/header/header';
+
+//Main
+@import 'layouts/main/welcome';
+@import 'layouts/main/svg';
+@import 'layouts/main/about';
+@import 'layouts/main/form';
+@import 'layouts/main/response';
+@import 'layouts/main/feature';
+@import 'layouts/main/boost';
+
+//Footer
+@import 'layouts/footer/footer';
+
 
 
 

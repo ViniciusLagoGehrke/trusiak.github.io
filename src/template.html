@@ -5,8 +5,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Stronka do ścinania linku HTML</title>
-  <meta name="description" content="">
+  <title>Shortly</title>
+  <meta name="description" content="Web application for shortening links. Cut your URL Adress by one click.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -15,18 +15,18 @@
     <div class="wrapper">
       <nav class="menu">
         <a class="menu__logo" href="/index.html">
-          <img src="assets/images/logo.svg" alt="Scoot Logo">
+          <img src="assets/images/logo.svg" alt="Shortly Logo">
         </a>
         <div class="menu__wrapper">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="" class="menu__link">Features</a>
+              <a href="#" class="menu__link">Features</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">Pricing</a>
+              <a href="#" class="menu__link">Pricing</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">Resources</a>
+              <a href="#" class="menu__link">Resources</a>
             </li>
           </ul>
           <div class="menu__login">
@@ -55,7 +55,7 @@
           <h1 class="welcome__name">More than just shorter links</h1>
           <p class="welcome__text">Build your brand’s recognition and get detailed insights
             on how your links are performing.</p>
-          <button class="button button--full button--welcome">Get started</button>
+          <button class="button button--full button--welcome button--started">Get started</button>
         </article>
 
         <div class="welcome__svg">
@@ -232,9 +232,9 @@
                 d="M258.392 88.776s5.032 2.83 4.58 11.985c-.453 9.155-3.29 22.932-6.153 26.5-2.864 3.57-12.88 4.968-12.88 4.968s5.464 12.977 9.53 16.326c4.066 3.349-4.086 15.687-12.015 11.639-7.928-4.049-17.12-14.216-17.12-14.216s6.612-12.245 4.376-18.69c-2.235-6.445-10.772-29.064-4.376-35.242 6.396-6.18 20.186-15.035 34.058-3.27z" />
               <path fill="#FFF" opacity=".25"
                 d="M214.334 190L210 244.055 223.238 251 234 249.122l-13.428-16.504zM284 187s17.909 42.077 9.97 57l-6.116-1.16L284 187z" />
-              <path fill="url(#r)"
+              <path fill="url(#r)" id="leftHand"
                 d="M235.522 258.045s-6.766 5.775-3.746 10.267c3.02 4.491 6.625 4.363 9.631 2.355 3.006-2.009 8.911-6.776 15.946-4.588 7.035 2.188 8.744 3.58 8.744 3.58s3.705-2.316 2.744-4.639c-.962-2.323-8.32-9.85-10.452-10.825-2.132-.975-10.983 2.021-10.983 2.021s-6.503-1.758-11.884 1.83z" />
-              <path fill="url(#s)"
+              <path fill="url(#s)" id="rightHand"
                 d="M295.191 245.598s-6.385.759-7.998 4.957c-1.613 4.198-2.193 4.71-2.193 4.71s3.606.69 5.106-1.264 3.059-1.133 3.059-1.133l-.447 2.507s9.798 1.477 14.224-.11c4.425-1.589 6.325-3.453 6.325-3.453l1.733-4.24s-4.18-3.03-7.332-3.5c-3.152-.47-12.477 1.526-12.477 1.526z" />
               
               <path fill="#3F3D56"
@@ -252,11 +252,6 @@
               <path fill="url(#u)" d="M263 389c-.881 1.001-1.29 1.37-.77.547.27-.159.527-.342.77-.547z" />
             </g>
           </svg>
-
-
-
-
-
         </div>
       </div>
     </section>
@@ -276,7 +271,7 @@
           <ul class="feature">
             <li class="feature__item" role="article">
               <div class="feature__img">
-                <img src="assets/images/icon-brand-recognition.svg" alt="" class="about__img">
+                <img src="assets/images/icon-brand-recognition.svg" alt="shortly brand feature icon" class="about__img">
               </div>
               <h3 class="feature__title">Brand Recognition</h3>
               <p class="feature__text">Boost your brand recognition with each click. Generic links don’t mean a thing.
@@ -284,7 +279,7 @@
             </li>
             <li class="feature__item" role="article">
               <div class="feature__img">
-                <img src="assets/images/icon-detailed-records.svg" alt="" class="about__img">
+                <img src="assets/images/icon-detailed-records.svg" alt="shortly detailed feature icon" class="about__img">
               </div>
               <h3 class="feature__title">Detailed Records</h3>
               <p class="feature__text">Gain insights into who is clicking your links. Knowing when and where people
@@ -292,7 +287,7 @@
             </li>
             <li class="feature__item" role="article">
               <div class="feature__img">
-                <img src="assets/images/icon-fully-customizable.svg" alt="" class="about__img">
+                <img src="assets/images/icon-fully-customizable.svg" alt="shortly customizable feature icon" class="about__img">
               </div>
               <h3 class="feature__title">Fully Customizable</h3>
               <p class="feature__text">Improve brand awareness and content discoverability through customizable links,
@@ -305,7 +300,7 @@
     <section class="boost">
       <div class="wrapper">
         <h2 class="boost__title">Boost your link today</h2>
-        <button class="button button--full button--boost">Get started</button>
+        <button class="button button--full button--boost button--started">Get started</button>
       </div>
     </section>
     </div>
@@ -314,19 +309,19 @@
     <div class="wrapper">
       <div class="footer__content">
         <a class="footer__logo" href="/index.html">
-          <img src="assets/images/logo.svg" class="logo--footer" alt="Scoot Logo">
+          <img src="assets/images/logo.svg" class="logo--footer" alt="Shortly Logo">
         </a>
         <nav class="footer__nav">
           <h4 class="footer__title">Features</h4>
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="" class="footer__link">Link Shortening</a>
+              <a href="#" class="footer__link">Link Shortening</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Branded Links</a>
+              <a href="#" class="footer__link">Branded Links</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Analytics</a>
+              <a href="#" class="footer__link">Analytics</a>
             </li>
           </ul>
         </nav>
@@ -334,13 +329,13 @@
           <h4 class="footer__title">Resources</h4>
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="" class="footer__link">Blog</a>
+              <a href="#" class="footer__link">Blog</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Developers</a>
+              <a href="#" class="footer__link">Developers</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Support</a>
+              <a href="#" class="footer__link">Support</a>
             </li>
           </ul>
         </nav>
@@ -348,31 +343,31 @@
           <h4 class="footer__title">Company</h4>
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="" class="footer__link">About</a>
+              <a href="#" class="footer__link">About</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Our Team</a>
+              <a href="#" class="footer__link">Our Team</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Careers</a>
+              <a href="#" class="footer__link">Careers</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Contact</a>
+              <a href="#" class="footer__link">Contact</a>
             </li>
           </ul>
         </nav>
         <div class="footer__social-medias">
-          <a href="" class="footer__social-media">
-            <img src="assets/images/icon-facebook.svg" alt="" class="footer__social-icon">
+          <a href="#" class="footer__social-media">
+            <img src="assets/images/icon-facebook.svg" alt="icon facebook shortly" class="footer__social-icon">
           </a>
-          <a href="" class="footer__social-media">
-            <img src="assets/images/icon-twitter.svg" alt="" class="footer__social-icon">
+          <a href="#" class="footer__social-media">
+            <img src="assets/images/icon-twitter.svg" alt="icon twitter shortly" class="footer__social-icon">
           </a>
-          <a href="" class="footer__social-media">
-            <img src="assets/images/icon-pinterest.svg" alt="" class="footer__social-icon">
+          <a href="#" class="footer__social-media">
+            <img src="assets/images/icon-pinterest.svg" alt="icon pinterest shortly" class="footer__social-icon">
           </a>
-          <a href="" class="footer__social-media">
-            <img src="assets/images/icon-instagram.svg" alt="" class="footer__social-icon">
+          <a href="#" class="footer__social-media">
+            <img src="assets/images/icon-instagram.svg" alt="icon instagram shortly" class="footer__social-icon">
           </a>
         </div>
       </div>
