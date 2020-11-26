@@ -2,5 +2,8 @@ body{
     background-color: var(--color-white);
     margin-top: var(--header-height);
     
+    @include breakpoint-down(small){
+        margin-top: var(--header-height-mobile);
+    }
 }
 

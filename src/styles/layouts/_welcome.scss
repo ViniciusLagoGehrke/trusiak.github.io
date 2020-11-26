@@ -12,7 +12,11 @@
     }
 
     .wrapper {
-        padding: 0 20px;
+        padding: 0 10px;
+
+        @include breakpoint-down(medium) {
+            padding: 0 20px;
+        }
 
         @include breakpoint-down(small) {
             padding: 0 30px;
@@ -26,11 +30,16 @@
         width: 733px;
         height: 482px;
 
-        @include breakpoint-down(small) {
+        @include breakpoint-down(medium) {
             width: 100%;
             height: auto;
             min-width: 450px;
             max-width: 600px;
+        }
+
+        @include breakpoint-down(small) {
+            min-height: 380px;
+            min-width: 500px;
         }
     }
 
@@ -65,7 +74,8 @@
         left: 0;
     }
     @include breakpoint-down(small) {
-        left: 55px;
+        left: 85px;
         padding-bottom: 50px;
+        
     }
 }
