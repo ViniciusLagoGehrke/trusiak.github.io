@@ -8,6 +8,7 @@
   <title>Shortly</title>
   <meta name="description" content="Web application for shortening links. Cut your URL Adress by one click.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <html lang="en-EN"></html>
 </head>
 
 <body>
@@ -257,8 +258,8 @@
     </section>
     <section class="about">
       <div class="wrapper">
-        <form class="form" action="">
-          <input type="url" placeholder="Shorten a link here..." class="form__input">
+        <form class="form">
+          <input type="url" title="Place link here" placeholder="Shorten a link here..." data-error-text="Fill this field" class="form__input">
           <button class="button--form button--full button" type="submit">Shorten it!</button>
           <span class="form__error">Please add a link</span>
         </form>
