@@ -1,11 +1,13 @@
 import { gsap } from "gsap";
 
+
+// Animate SVG
+
 const rightFoot = document.querySelector("#rightFoot");
 const rightLeg = document.querySelector("#rightLeg");
 const leftFoot = document.querySelector("#leftFoot");
 const leftHand = document.querySelector("#leftHand");
 const rightHand = document.querySelector("#rightHand");
-
 
 const tl_LEFT_FOOT = gsap.timeline({repeat: -1, yoyo: true});
 tl_LEFT_FOOT.set(leftFoot, {rotation: 5, y: 12, x:-38});
@@ -28,4 +30,16 @@ tl_RIGHT_HAND.to(rightHand, {x:2, duration: .4});
 tl_RIGHT_HAND.to(rightHand, {y:2, duration: .2});
 tl_RIGHT_HAND.to(rightHand, {x:1, y:0, duration: .2});
 tl_RIGHT_HAND.to(rightHand, {x:1, y:2, duration: .2});
+
+
+
+// Animation label
+
+export function shakeThisElement(element){
+    const tl_Shaking = gsap.timeline({repeat: 0, yoyo: true});
+    tl_Shaking.to(element, {rotation: 1, duration: .1});
+    tl_Shaking.to(element, {rotation: -1, duration: .1});
+    tl_Shaking.to(element, {rotation: 1, duration: .1});
+    tl_Shaking.to(element, {rotation: 0, duration: .1});
+} 
 

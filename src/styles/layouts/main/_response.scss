@@ -100,13 +100,6 @@
     
 }
 
-.button--response{
-    width: 105px;
-    height: 40px;
-    border-radius: 7px;
-    margin: 0 24px;
-    justify-self: flex-end;
-}
 
 @keyframes run_swing {
     0% {
@@ -116,3 +109,4 @@
     transform: rotate(360deg);
     }
 }
+

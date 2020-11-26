@@ -21,6 +21,14 @@
         border-radius: 50px;
     }
 
+    &--response{
+        width: 105px;
+        height: 40px;
+        border-radius: 7px;
+        margin: 0 24px;
+        justify-self: flex-end;
+    }
+
     &--form {
         margin-left: 23px;
         height: 64px;

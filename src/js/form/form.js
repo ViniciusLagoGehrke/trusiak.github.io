@@ -2,6 +2,7 @@ import getData from './getData';
 import { renderUserLink, renderOkRequestElement, 
         renderRejectRequestElement, renderProblemWithServer } from "./view"
 import { clearInput, checkTargetLinkLength } from "./helpers"
+import {shakeThisElement} from "../animation/animation"
 
 const form = document.querySelector('.form');
 const formInput = form.querySelector('.form__input');
@@ -54,6 +55,7 @@ function handleResponse(data, linkDiv){
 function createCopyButton(dataToCopy, element){
     element.querySelector(".button--response").addEventListener("click", function() {
         handleCopyButton(this, dataToCopy);
+        shakeThisElement(element)
     })
 }
 
